@@ -1,0 +1,4 @@
+interface:
+  display_name: "小说到 AI 短剧"
+  short_description: "串联小说改编、人物三视图、本地 H3、剪辑、音画同步、字幕与成片终检"
+  default_prompt: "用 $novel-to-drama 将这部小说制作成 AI 短剧，使用 imagegen 生成人物三视图，使用本地 ComfyUI 和 MiniMax H3 生成视频，并完成剪辑、音画同步、字幕合成及最终全片检查。"
