@@ -70,30 +70,6 @@ git clone https://github.com/Bayue-2333/novel-to-drama.git "${CODEX_HOME:-$HOME/
 
 默认交付：各集干净母版、烧录字幕版、SRT、ASS、剧本/角色/分镜资料、生成清单、剪辑工程或 EDL、修复记录和最终检查报告。
 
-## 验证
-
-在仓库目录运行标准库测试，不调用模型、不消耗生成额度：
-
-```bash
-python -B scripts/selftest.py
-```
-
-可选 FFmpeg 集成测试，会在 `work/` 中生成短测试素材、实际烧录 ASS 并验证解码、字幕和审查记录失效机制：
-
-```bash
-python -B scripts/selftest.py --ffmpeg /path/to/ffmpeg --ffprobe /path/to/ffprobe
-```
-
-只读 ComfyUI 预检：
-
-```bash
-python -B scripts/preflight.py --url http://127.0.0.1:8188 --out work/preflight
-```
-
-创建版本已通过 16 项单元测试和合成媒体集成测试。尚未以真实小说完成 H3 端到端成片验证；首次制作时先生成并检查代表性样片。
-
-**检查边界：**脚本能检查媒体、字幕与审查记录的结构，不能自动证明人物一致、剧情连贯或嘴型正确。稀疏抽帧、文件可播放或 ASR 结果不等于全片视听检查；未覆盖内容必须标记为 partial。工作流导出图与参考图的真实连接，也不能仅靠提示词声称完成。
-
 ## 文件入口
 
 - [SKILL.md](SKILL.md)：Codex 总控入口。
@@ -103,6 +79,7 @@ python -B scripts/preflight.py --url http://127.0.0.1:8188 --out work/preflight
 - [项目与交付契约](references/project-contract.md)：断点状态、哈希失效与终检格式。
 - [环境与来源](references/environment-and-sources.md)：依赖发现与上游链接。
 
-## 上游与鸣谢
+## 鸣谢
 
 本仓库新增编排说明和辅助检查脚本，依赖 OpenMontage 与 shuohao-skills 的现有安装，没有捆绑或复制它们的运行时。上游软件、模型和第三方素材分别遵循各自许可证与使用条款。
+
