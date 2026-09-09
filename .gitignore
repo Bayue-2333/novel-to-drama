@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+work/
+outputs/
+.gates.jsonl
+*.mp4
+*.wav
+*.safetensors
+*.ckpt
+*.zip
+.DS_Store
+Thumbs.db
