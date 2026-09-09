@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "project_id": null,
+  "source": {"path": null, "sha256": null, "covered_chapters": [], "unread_chapters": []},
+  "brief": {"episodes": null, "seconds_per_episode": null, "aspect_ratio": "9:16", "style": "realistic", "dialogue_language": "zh", "subtitle_language": "zh"},
+  "authorization": {"scope": null, "budget": null, "max_quality_retries_per_segment": 2},
+  "generation": {"image_provider": "codex_builtin_imagegen", "video_provider": "comfyui", "model_family": "minimax_h3_local", "server_url": "http://127.0.0.1:8188", "workflow_api_path": null, "output_node": null, "max_parallel_jobs": 1, "observed_fps": null},
+  "audio": {"strategy": "native_first", "sample_rate": 48000, "voice_registry_path": "audio/voices.json"},
+  "delivery": {"clean_master": true, "burned_subtitle_video": true, "srt": true, "ass": true, "target_width": null, "target_height": null, "target_fps": null},
+  "state": {"stage": "preflight", "status": "pending", "artifacts": [], "blockers": []}
+}
